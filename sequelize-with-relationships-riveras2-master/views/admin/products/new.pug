@@ -1,0 +1,22 @@
+doctype html
+
+html
+head
+  title Product Inventory
+  link(rel="stylesheet" type="text/css" href= "CSS/style.css")
+body
+  h1 New Product form
+
+  form(method='POST')
+    label Name:
+      input(type='text' name='name')
+    label Description:
+      input(type='text' name='description')
+    label Price:
+      input(type='number' step='any' name='price')
+    select(id='category' name='category')
+        option(value = 'food') Food
+        option(value = 'clothing') Clothing
+        option(value = 'tools') Tools
+        option(value = 'misc') Misc.
+    button(type='submit') Submit

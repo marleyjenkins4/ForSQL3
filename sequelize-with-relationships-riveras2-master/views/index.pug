@@ -1,0 +1,32 @@
+doctype html
+
+html
+head
+  title Product Inventory
+  link(rel="stylesheet" type="text/css" href= "CSS/style.css")
+body
+  h1 Welcome To Our Product Site
+
+  form(method='POST')
+    label Do you want to look at Food Products?(Click Below)
+      br
+      input( type="checkbox" name='food' id = 'food')
+      br
+    label Do you want to look at Clothing Products?(Click Below)
+      br
+      input( type="checkbox" name='clothing' id = 'clothing')
+      br
+    label Do you want to look at Tool Products?(Click Below)
+      br
+      input( type="checkbox" name='tools' id = 'tools')
+      br
+    label Do you want to look at Misc. Products?(Click Below)
+      br
+      input( type="checkbox" name='misc' id = 'misc')
+      br
+
+  button(type='submit') Submit
+  br
+  a(href='/admin/products/new') Add New Product
+  br
+  a(href="/admin/products") View Entire List

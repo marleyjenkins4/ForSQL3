@@ -1,0 +1,21 @@
+doctype html
+
+html
+head
+  title Product Inventory
+  link(rel="stylesheet" type="text/css" href= "CSS/style.css")
+body
+  h1 Product Information
+
+  ul
+    li Name: #{product.name}
+    li Description: #{product.description}
+    li Price: $#{product.price}
+    li Category: #{card.category}
+
+  form(action="/admin/products/delete" method="POST")
+    input(type="hidden" name="id" value=product.id)
+    button(type="submit") Delete
+  a(href="/admin/products/edit/" + product.id) Edit Product Information
+  br
+  a(href="/admin/products") Back To List

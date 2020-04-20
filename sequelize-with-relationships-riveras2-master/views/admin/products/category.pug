@@ -1,0 +1,13 @@
+doctype html
+
+html
+head
+  title Product Inventory
+  link(rel="stylesheet" type="text/css" href= "CSS/style.css")
+body
+  h1 Products By Category
+
+  if food
+    if each product in products == (card.category == food)
+      ul
+        
